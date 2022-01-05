@@ -98,7 +98,7 @@ jobs:
       - name: Prepare Environment
         run: |
           # this mimics "test-pr.sh", but without running repo-local scripts (to avoid CVE-2020-15228 via the scripts being updated to write nasty things to $GITHUB_ENV)
-          bashbrewVersion="$(< ./bashbrew-version)"
+          bashbrewVersion="$(< bashbrew-version)"
           docker build --pull --tag oisupport/bashbrew:base "https://github.com/docker-library/bashbrew.git#v$bashbrewVersion"
           docker build --tag oisupport/bashbrew:diff-pr .
       - name: Gather Maintainers
