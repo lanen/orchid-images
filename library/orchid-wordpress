@@ -1,10 +1,9 @@
 # this file is generated via https://github.com/docker-library/wordpress/blob/891b7108294a629e6cc16c2f4bf643d9475894cc/generate-stackbrew-library.sh
 
-Maintainers: evan <cppmain@gmail.com>
-
+Maintainers: evan <cppmain@gmail.com> (@lanen)
 GitRepo: https://github.com/lanen/orchid-wordpress.git
 
 Tags: latest, 5.8.2-php7.4-fpm-alpine
 Architectures: amd64, arm64v8
-GitCommit: fbc4dd7593dd0cf7a239348cb7ebcdcbf505286f
+GitCommit: d3fdd569f4d46b50dcea9562658e54aadfdd343a
 Directory: latest/php7.4/fpm-alpine
