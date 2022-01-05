@@ -30,7 +30,7 @@ jobs:
         name: Affected Images
         run: |
           (set +x; echo "::stop-commands::$(echo -n ${{ github.token }} | sha256sum | head -c 64)")
-          git fetch --quiet https://github.com/lanen/orchid-images.git master
+          git fetch --quiet https://github.com/lanen/orchid-images.git main
           images="$(git diff --no-renames --name-only FETCH_HEAD...HEAD -- library/)"
           if [ -n "$images" ]; then
             new="$(git diff --no-renames --name-only --diff-filter=A FETCH_HEAD...HEAD -- $images)"
@@ -69,7 +69,7 @@ jobs:
         env:
           IMAGES: ${{ needs.gather.outputs.images }}
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.TOKEN }}
           script: |
             const data = JSON.parse(process.env.IMAGES);
             var labels = data.images;
@@ -121,7 +121,7 @@ jobs:
       - name: Comment
         uses: actions/github-script@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.TOKEN }}
           script: |
             const commentText = 'Diff for ' + context.payload.pull_request.head.sha + ':';
             needNewComment = true;
