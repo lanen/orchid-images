@@ -1,7 +1,7 @@
 name: Munge PR
 
 on:
-  pull_request_target:
+  pull_request:
 
 permissions:
   contents: read
@@ -30,7 +30,7 @@ jobs:
         name: Affected Images
         run: |
           (set +x; echo "::stop-commands::$(echo -n ${{ github.token }} | sha256sum | head -c 64)")
-          git fetch --quiet https://github.com/lanen/orchid-images.git master
+          git fetch --quiet https://github.com/lanen/orchid-images.git main
           images="$(git diff --no-renames --name-only FETCH_HEAD...HEAD -- library/)"
           if [ -n "$images" ]; then
             new="$(git diff --no-renames --name-only --diff-filter=A FETCH_HEAD...HEAD -- $images)"
