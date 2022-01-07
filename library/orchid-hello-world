@@ -1,9 +1,27 @@
 # this file is generated via https://github.com/lanen/orchid-hello-world/blob/e52f2b513725ca5a358b09436695b177c967a463/generate-stackbrew-library.sh
 
+# this file is generated via https://github.com/lanen/orchid-hello-world/blob/e52f2b513725ca5a358b09436695b177c967a463/generate-stackbrew-library.sh
+
 Maintainers: evan <cppmain@gmail.com> (@lanen)
 GitRepo: https://github.com/lanen/orchid-hello-world.git
 GitCommit: e52f2b513725ca5a358b09436695b177c967a463
 
 Tags: linux
 SharedTags: latest
-Architectures: *
+Architectures: amd64
+amd64-GitCommit: 6c8e22005b1aefe0b699ead3f0ba708677ecb605
+amd64-Directory: amd64/orchid-hello-world
+
+Tags: nanoserver-ltsc2022
+SharedTags: nanoserver, latest
+Architectures: windows-amd64
+windows-amd64-GitCommit: 6c8e22005b1aefe0b699ead3f0ba708677ecb605
+windows-amd64-Directory: amd64/orchid-hello-world/nanoserver-ltsc2022
+Constraints: nanoserver-ltsc2022
+
+Tags: nanoserver-1809
+SharedTags: nanoserver, latest
+Architectures: windows-amd64
+windows-amd64-GitCommit: 6c8e22005b1aefe0b699ead3f0ba708677ecb605
+windows-amd64-Directory: amd64/orchid-hello-world/nanoserver-1809
+Constraints: nanoserver-1809
