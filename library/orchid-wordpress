@@ -1,6 +1,6 @@
 # this file is generated via https://github.com/lanen/orchid-wordpress/blob/07d0167fbe1d0938f41b3d1d6415be24ceb78340/generate-stackbrew-library.sh
 
-Maintainers: evan <cppmain@gmail.com>
+Maintainers: evan <cppmain@gmail.com> (@lanen)
 GitRepo: https://github.com/lanen/orchid-wordpress.git
 
 Tags: 5.8.2-fpm-alpine, 5.8-fpm-alpine, 5-fpm-alpine, fpm-alpine, 5.8.2-php7.4-fpm-alpine, 5.8-php7.4-fpm-alpine, 5-php7.4-fpm-alpine, php7.4-fpm-alpine
