@@ -3,7 +3,7 @@
 # this file is generated via https://github.com/lanen/orchid-hello-world/blob/e52f2b513725ca5a358b09436695b177c967a463/generate-stackbrew-library.sh
 
 Maintainers: evan <cppmain@gmail.com> (@lanen)
-GitRepo: https://github.com/lanen/orchid-hello-world.git
+GitRepo: git@github.com:lanen/orchid-hello-world.git
 GitCommit: e52f2b513725ca5a358b09436695b177c967a463
 
 Tags: linux
